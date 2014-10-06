@@ -18,11 +18,12 @@ class Solution:
             if count == 0: break
 
         if count != 0: return False
-        return ( isValid(s[1:i]) and isValid(s[i+1:]))
+        return ( self.isValid(s[1:i]) and self.isValid(s[i+1:]))
 
+x = Solution()
 
-print isValid("({})[]") == True
-print isValid("()") == True
-print isValid("[[({})]]]") == False
+print x.isValid("({})[]") == True
+print x.isValid("()") == True
+print x.isValid("[[({})]]]") == False
 
 
